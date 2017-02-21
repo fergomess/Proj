@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^sobre/', sobre),
     url(r'^tarefa/([0-9]{4})/', tarefa),
     url(r'^tarefaN/(?P<ano>[0-9]{4})/(?P<mes>[0-9]{2})', tarefaN),
+    url(r'^tarefaN/(?P<dia>[0-9]{4})/(?P<mes>[0-9]{2})/(?P<ano>[0-9]{4})', tarefaD),
 ]

@@ -10,7 +10,7 @@ class Tarefa(object):
 
     def __str__(self):
         return self.titulo
-        
+
 def home(request):
     return HttpResponse("Olá")
 
@@ -22,3 +22,6 @@ def tarefa(request, numero):
 
 def tarefaN(request, ano, mes):
     return HttpResponse("Tarefa: " + str(ano) + "/" + str(mes))
+
+def tarefaD(request, dia, mes, ano):
+    return HttpResponse("Tarefa: " + str(dia) + "/" + str(mes) + "/" + str(ano))
